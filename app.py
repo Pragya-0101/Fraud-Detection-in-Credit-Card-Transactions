@@ -2,14 +2,13 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-
 # ==============================
 # LOAD MODEL
 # ==============================
 
-model = joblib.load("fraud_model.pkl")
-amount_transformer = joblib.load("amount_transformer.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("models/fraud_detection_model.pkl")
+amount_transformer = joblib.load("models/amount_transformer.pkl")
+scaler = joblib.load("models/scaler.pkl")
 
 
 # ==============================
@@ -100,7 +99,7 @@ if uploaded_file is not None:
 
 
         # Scale Time and Amount
-        X[["Time", "Amount"]] = scaler.transform(
+        X[["Time", "Amount"]] =scaler.transform(
             X[["Time", "Amount"]]
         )
 
