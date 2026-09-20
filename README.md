@@ -10,11 +10,15 @@ Detect fraudulent credit card transactions using machine learning techniques.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 
+
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikit-learn)
+
 
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
 
+
 ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-FF4B4B?logo=streamlit)
+
 
 </div>
 
